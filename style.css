@@ -1,0 +1,93 @@
+/* Step 1: Reset styles and set global box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Step 1: Style body and background */
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 10em;
+    background: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    opacity: 0.5;
+    background-position: 100% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Step 2: Glassmorphism effect */
+  .glass {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    color: #000;
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    line-height: 1.5;
+    transform: translateY(-5%);
+    transition: transform 0.5s;
+  }
+  
+  /* Variant Glass Container */
+  .glass-1 {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    color: rgb(122, 82, 82);
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    line-height: 1.5;
+    transform: translateY(-5%);
+    transition: transform 0.5s;
+    font-size: 1.7rem;
+  }
+  
+  /* Headings inside glass */
+  .glass h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .glass h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  /* Input fields */
+  .input {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  
+  .input input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    padding-left: 30px;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+  }
+  
+  /* Paragraph text */
+  .glass p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+  }
+  
